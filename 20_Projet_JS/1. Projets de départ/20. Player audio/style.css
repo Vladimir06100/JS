@@ -1,0 +1,13 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #3d3f41;
+  background: linear-gradient(132deg, #3d3f41 6%, #384a52 61%, #4a4c4e 95%);
+  font-family: "Lato", sans-serif;
+  padding: 100px 20px;
+}

@@ -1,0 +1,116 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    font-family: Lato, sans-serif;
+    background: linear-gradient(to right, #ffefba, #ffffff); 
+    padding: clamp(20px, 5vw, 50px) 20px 10px;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+h1 span {
+    font-family: Raleway;
+    font-weight: 600;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.input-group:nth-child(2) {
+    margin-top: 30px;
+}
+.container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.container input {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.btns-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+form button {
+    font-size: 18px;
+    min-width: 100px;
+    margin: 0 10px;
+    padding: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #f1f1f1;
+    border: none;
+    background: #006c67;
+}
+.info-txt {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cookies-list {
+    font-size: 40px;
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 5px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+.cookies-list li {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.cookies-list li p {
+    margin: 10px 0;
+}
+.cookies-list li span {
+    font-weight: 600;
+}
+.cookies-list li button {
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    background: crimson;
+    color: #f1f1f1;
+}
+
+.toasts-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.toast {
+    font-size: 17px;
+    color: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+    min-width: 150px;
+    border-radius: 2px;
+}

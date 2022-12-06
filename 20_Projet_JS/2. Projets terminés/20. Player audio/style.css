@@ -1,0 +1,132 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #3d3f41;
+  background: linear-gradient(132deg, #3d3f41 6%, #384a52 61%, #4a4c4e 95%);
+  font-family: "Lato", sans-serif;
+  padding: 100px 20px;
+}
+
+.audio-player-container  {
+  max-width: 350px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: #0d0c0f;
+  background: linear-gradient(132deg, #0d0c0f 6%, #283339 61%, #29343a 95%);
+}
+
+.thumbnail-container {
+  border-radius: 15px;
+  user-select: none;
+  padding: 20px 20px 10px;
+}
+.thumbnail {
+  border-radius: 15px;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 17px 36px #00000080;
+}
+.music-info {
+  padding: 20px 50px 50px;
+}
+.top-information {
+  display: flex;
+  justify-content: space-between;
+}
+.music-title {
+  color: #fff;
+  font-size: 25px;
+}
+.artist-name {
+  color: #666568
+}
+.current-index {
+  color: #d2d2d2;
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: 2px;
+}
+
+.progress-container {
+  position: relative;
+  margin: 35px 0 60px;
+  background-color: #727377;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.progress-bar {
+  position: relative;
+  height: 5px;
+  border-radius: 5px;
+  background: #4a8ea3;
+  transform-origin: left;
+  transform: scaleX(0);
+  background: linear-gradient(99deg, #4a8ea3, #6dd6ef 100%);
+}
+
+.time-indicator {
+  position: absolute;
+  top: 10px;
+  font-size: 14px;
+  color: #666568;
+  pointer-events: none;
+}
+.duration-time {
+  right: 0;
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+button img {
+  width: 25px;
+  pointer-events: none;
+}
+.shuffle {
+  position: absolute;
+  left: 0;
+}
+.shuffle svg {
+  width: 20px;
+}
+.shuffle svg {
+  fill: #545454;
+  transition: fill 0.2s ease-in-out;
+}
+.shuffle.active svg {
+  fill: #fff;
+}
+
+.play-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  background: rgba(113,247,249);
+  background: linear-gradient(130deg, #71f7f9, #bdfcfe);
+  margin: 0 15px;
+}
+.play-btn img {
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,93 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: lato, Helvetica, sans-serif;
+  background: linear-gradient(to right, #d17608, #ec3503);
+  padding: clamp(20px, 5vw, 50px) 20px 10px;
+}
+
+h1, 
+.score,
+.advice {
+  text-align: center;
+  color: #f1f1f1;
+}
+
+h1 {
+  font-family: Raleway;
+  font-size: clamp(25px, 7vw, 70px);
+  font-weight: 300;
+}
+h1 span {
+  font-weight: 800;
+}
+.advice {
+  font-size: clamp(16px, 2.5vw, 25px);
+  margin-top: 10px;
+}
+.score {
+  font-size: clamp(16px, 2.5vw, 20px);
+  margin-top: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 800px;
+  gap: 10px;
+  margin: 30px auto 0;
+}
+.card {
+  aspect-ratio: 1/1;
+  perspective: 1000px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease-out;
+}
+.card:hover {
+  transform: scale(1.02)
+}
+.double-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.6s;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+  pointer-events: none;
+}
+.face,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.face {
+  transform: rotateY(180deg);
+}
+.face img,
+.back img {
+  width: 60%;
+}
+.active {
+  transform: rotateY(180deg);
+}

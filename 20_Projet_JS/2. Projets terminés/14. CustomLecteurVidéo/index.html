@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Video Player</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<h1><span>Lecteur</span> personnalisé.</h1>
+
+	<div class="video-container">
+
+		<video src="ressources/video.mp4" preload="metadata" class="video">
+			<source src="ressources/video.mp4" type="video/mp4"></source>
+		</video>
+
+		<div class="controls">
+			<div class="progress-bar">
+				<div class="progress"></div>
+			</div>
+
+			<div class="controls-container">
+				<button class="play-toggler">
+					<img src="ressources/play.svg" alt="play icon">
+				</button>
+				<button class="mute-btn">
+					<img src="ressources/unmute.svg" alt="unmunte icon">
+				</button>
+				<input type="range" class="volume-slider" min="0" max="100" value="50" step="1">
+				<p class="timer">
+					<span class="time-display current">00:00</span>
+					<span>/</span>
+					<span class="time-display total">00:00</span>
+				</p>
+				<button class="fullscreen-toggler">
+					<img src="ressources/fullscreen.svg" alt="fullscreen icon">
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="app.js"></script>
+</body>
+</html>

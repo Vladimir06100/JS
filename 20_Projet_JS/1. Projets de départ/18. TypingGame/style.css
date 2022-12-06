@@ -1,0 +1,17 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #f09819,
+    #edde5d
+  );
+  font-family: Roboto, Helvetica, sans-serif;
+  padding: 50px 10px;
+}

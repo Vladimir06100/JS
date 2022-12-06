@@ -1,0 +1,110 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background: #d1d1d1;
+  padding-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #111;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+h1 span {
+  font-weight: 500;
+}
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+
+.controls {
+  will-change: transform;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  transform: translateY(calc(100% - 8px));
+  transition: transform 0.2s ease-out;
+  cursor: auto;
+}
+.video-container:hover .controls {
+  transform: translateY(0%);
+}
+
+.progress-bar {
+  height: 8px;
+  width: 100%;
+  background: #000;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f1f142;
+}
+.progress {
+  /* cursor: pointer;
+   */
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #f91818;
+}
+
+.controls-container {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+.controls-container button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.controls-container button img {
+  width: 20px;
+}
+.mute-btn {
+  margin: 0 30px;
+}
+input[type="range"]{
+  height: 4px;
+  cursor: pointer;
+}
+.timer {
+  font-variant-numeric: tabular-nums;
+  margin-left: 25px;
+  font-weight: 500;
+  color: #d1d1d1;
+}
+.timer span:nth-child(2) {
+  margin: 0 3px;
+}
+.fullscreen-toggler {
+  margin-left: auto;
+}
+
+@media (max-width: 650px) {
+  .timer {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  input[type="range"]{
+    width: 100px;
+  }
+}

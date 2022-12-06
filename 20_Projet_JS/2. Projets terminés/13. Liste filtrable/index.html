@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recherche d'utilisateurs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="side-nav">
+      <a href="#" class="nav-logo">
+        <img src="images/logo.svg" alt="logo" />
+        <h1>Users</h1>
+      </a>
+      <a href="#" class="bloc-link">
+        <img src="images/dashboard.svg" />
+        <span class="nav-links">Dashboard</span>
+      </a>
+      <a href="#" class="bloc-link">
+        <img src="images/speech-bubble.svg" />
+        <span class="nav-links">Messenger</span>
+      </a>
+      <a href="#" class="bloc-link active">
+        <img src="images/server.svg" />
+        <span class="nav-links">Database</span>
+      </a>
+      <a href="#" class="bloc-link">
+        <img src="images/calendar.svg" />
+        <span class="nav-links">Calendar</span>
+      </a>
+    </nav>
+
+    <main class="main-content">
+      <div class="input-control">
+        <label for="search">
+          <img src="images/search.svg" alt="search icon" />
+        </label>
+        <input type="text" id="search" placeholder="Search for an user" />
+      </div>
+
+      <h2 class="section-title">Database Results</h2>
+      <div class="table">
+        <h3 class="table-title">Name</h3>
+        <h3 class="table-title">Email</h3>
+        <h3 class="table-title">Phone</h3>
+      </div>
+      <ul class="table-results">
+       
+        <!-- <div class="table-item">
+          <p class="main-info">
+            <img
+              src="https://randomuser.me/api/portraits/thumb/men/71.jpg"
+              alt="avatar picture"
+            />
+            <span> Aubert Lorenzo </span>
+          </p>
+          <p class="email">lorenzo.aubert@example.com</p>
+          <p class="phone">05-26-85-79-68</p>
+        </div>
+      </div> -->
+    </ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

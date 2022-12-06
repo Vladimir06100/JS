@@ -1,0 +1,14 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Lato, Helvetica, sans-serif;
+  background: linear-gradient(45deg, #4ba0d9, #6dd5fa, #ffffff);
+  padding: clamp(20px, 5vw, 50px) 20px 10px;
+}

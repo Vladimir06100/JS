@@ -1,0 +1,14 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Open sans, Helvetica, sans-serif;
+  background: #111;
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+}
