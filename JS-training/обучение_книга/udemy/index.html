@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			.app{
+				text-align: center;
+			}
+			.green-btn{
+				color: white;
+				background-color: green;
+			}
+		</style>
+		<title>Document</title>
+		<div class="app">
+			<button id="my-button" onclick="changeButton('my-button')">hello</button>
+		</div>
+		<div class="app">
+			<button id="my-button-2" onclick="changeButton('my-button-2')">hello 2</button>
+		</div>
+	</head>
+	<body>
+		<script>
+			function changeButton(id) {
+				const myButton = document.getElementById(id);
+				myButton.innerHTML = 'hello fromJS'
+				myButton.className = 'green-btn'
+			}
+		</script>
+	</body>
+</html>

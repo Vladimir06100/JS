@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style précodé de la carte -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.0/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <!-- Script de la carte -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.0/dist/leaflet.js"
+      integrity="sha256-oH+m3EWgtpoAmoBO/v+u8H/AdwB/54Gc/SgqjUKbb4Y="
+      crossorigin=""
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="add">Ou suis je</button>
+    <button class="save">Sauvegarder votre position</button>
+    <button class="getSave">Ma position sauvegardée</button>
+    <button class="delete">Supprimer ma position</button>
+
+    <div class="affichage"></div>
+
+    <div id="map" style="height: 180px"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

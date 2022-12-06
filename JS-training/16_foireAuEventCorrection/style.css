@@ -1,0 +1,17 @@
+#bloc-1 {
+  background-color: red;
+  height: 200px;
+  width: 100px;
+}
+
+#bloc-2 {
+  background-color: green;
+  height: 100px;
+  width: 200px;
+}
+
+#bloc-3 {
+  background-color: black;
+  height: 150px;
+  width: 150px;
+}

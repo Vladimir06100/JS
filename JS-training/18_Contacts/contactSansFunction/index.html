@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style précodé de la carte -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.0/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <!-- Script de la carte -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.0/dist/leaflet.js"
+      integrity="sha256-oH+m3EWgtpoAmoBO/v+u8H/AdwB/54Gc/SgqjUKbb4Y="
+      crossorigin=""
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form">
+      <input class="nameInput" type="text" placeholder="Nom" />
+      <input class="firstNameInput" type="text" placeholder="prénom" />
+      <input class="mailInput" type="text" placeholder="Mail" />
+      <input class="phoneInput" type="text" placeholder="Téléphone" />
+
+      <button class="addInput">Ajouter</button>
+    </form>
+
+    <section>
+      <p>Filtrer votre tableau</p>
+      <input type="text" class="filter" />
+      <p>RESULTAT</p>
+      <div class="affichageFiltre"></div>
+    </section>
+
+    <p>TOUT VOS CONTACTS</p>
+    <div class="affichage"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
