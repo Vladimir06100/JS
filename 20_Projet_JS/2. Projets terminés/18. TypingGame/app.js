@@ -52,7 +52,7 @@ function handleStart(e){
       timerID = undefined;
     }
 
-    time = 5;
+    time = 20;
     score = 0;
 
     timeDisplayed.classList.add("active")
