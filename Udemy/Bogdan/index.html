@@ -7,6 +7,7 @@
 		<title>Document</title>
 	</head>
 	<body>
+		<h1>My First Web Page</h1>
 		<script>
 			const myCity = {
 				city: 'New York',
@@ -31,6 +32,29 @@
 				like: 5,
 			};
 			console.log(post);
+
+			const name = 'Bogdan';
+			const age = 30;
+
+			const user1 = {
+				name: name,
+				age: age,
+			};
+			console.log(user1);
+
+			const user = {
+				name,
+				age,
+			};
+			console.log(user);
+
+			const myCity1 = {
+				city: 'New york',
+				cityGreeting: function () {
+					console.log(`Hello ${this.city}`);
+				},
+			}
+			myCity1.cityGreeting();
 
 			function myFn(a, b) {
 				let c;
