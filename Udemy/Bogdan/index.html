@@ -1,68 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<body>
-		<h1>My First Web Page</h1>
-		<script>
-			const myCity = {
-				city: 'New York',
-			};
-			myCity.popular = true;
 
-			console.log(myCity);
-			myCity.country = 'USA';
-			console.log(myCity);
+<head>
+	<link rel="icon" href="./favicon.ico" />
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+</head>
 
-			// delete
+<body>
+	<h1>My First Web Page</h1>
+	<script>
+		const myCity = {
+			city: 'New York',
+		};
+		myCity.popular = true;
 
-			delete myCity.country;
-			console.log(myCity);
+		console.log(myCity);
+		myCity.country = 'USA';
+		console.log(myCity);
 
-			const countryPropertyName = 'state';
+		// delete
 
-			myCity[countryPropertyName] = 'USA';
-			console.log(myCity);
-			const post = {
-				title: 'MyPOst',
-				like: 5,
-			};
-			console.log(post);
+		delete myCity.country;
+		console.log(myCity);
 
-			const name = 'Bogdan';
-			const age = 30;
+		const countryPropertyName = 'state';
 
-			const user1 = {
-				name: name,
-				age: age,
-			};
-			console.log(user1);
+		myCity[countryPropertyName] = 'USA';
+		console.log(myCity);
+		const post = {
+			title: 'MyPOst',
+			like: 5,
+		};
+		console.log(post);
 
-			const user = {
-				name,
-				age,
-			};
-			console.log(user);
+		const name = 'Bogdan';
+		const age = 30;
 
-			const myCity1 = {
-				city: 'New york',
-				cityGreeting: function () {
-					console.log(`Hello ${this.city}`);
-				},
-			}
-			myCity1.cityGreeting();
+		const user1 = {
+			name: name,
+			age: age,
+		};
+		console.log(user1);
 
-			function myFn(a, b) {
-				let c;
-				a = a + 1;
-				c = a + b;
-				return c;
-			}
-      console.log(myFn(11,2))
-		</script>
-	</body>
+		const user = {
+			name,
+			age,
+		};
+		console.log(user);
+
+		const myCity1 = {
+			city: 'New york',
+			cityGreeting: function () {
+				console.log(`Hello ${this.city}`);
+			},
+		}
+		myCity1.cityGreeting();
+
+
+		const z = 10;
+
+		let x = z;
+
+		x = 20;
+		console.log(z);
+		console.log(x);
+
+		// плохой пример
+		const person = {
+			name: 'Bogdan',
+			age: 30,
+		};
+
+		person.name = 'Vlad';
+		person.isAdult = true;
+
+		console.log(person.age); // 30
+		console.log(person.isAdult); // true
+
+		// хороший пример
+		const person1 = {
+			name: 'Bogdan',
+			age: 30,
+		};
+		//const person2 = { ...person1 }; // spread оператор разделения объекта на отдельные свойства ;
+		const person2 = JSON.parse(JSON.stringify(person1)); // глубокое копирование объекта	
+		person2.age = 32;
+		person2.isAdult = true;
+
+		console.log(person1.age); // 30
+		console.log(person2.age); // 32
+		console.log(person1.isAdult); // true
+
+
+		function myFn(a, b) {
+			let c;
+			a = a + 1;
+			c = a + b;
+			return c;
+		}
+		console.log(myFn(11, 2))
+		//неправильный формат необходимо сократить через использование функции
+		let n = 5;
+		let m = 10;
+
+		let c
+		c = n + m;
+		console.log(c); // 15
+
+		v = 10;
+		b = 20;
+		c = v + b;
+		console.log(c); // 30
+
+		// а вот формат объединения 
+		let s = 5;
+		let d = 10;
+
+		function sum(s, d) {
+			let c;
+			c = s + d;
+			return c;
+		}
+		console.log(sum); // 15
+
+	</script>
+</body>
+
 </html>
