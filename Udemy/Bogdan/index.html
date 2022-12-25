@@ -126,12 +126,29 @@
 		}
 		console.log(sum); // 15
 
-				function sumq(qs, qd) {
-						let qc;
-						qc = qs + qd;
-						return qc;
-					}
-					console.log(sumq); // 15
+		function sumq(qs, qd) {
+			let qc;
+			qc = qs + qd;
+			return qc;
+		}
+		console.log(sumq); // 15
+
+
+		const hommeOne = {
+			nom: 'BOB',
+			age: 32
+		}
+
+		function increaseHommeAge(homme) {
+			const updateHomme = Object.assign({}, homme)
+			updateHomme.age += 1
+			return updateHomme
+		}
+
+		const updateHommeOne = increaseHommeAge(hommeOne)
+		console.log(hommeOne.age)// 32
+		console.log(updateHommeOne.age) //33
+
 	</script>
 </body>
 
