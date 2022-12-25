@@ -11,7 +11,7 @@
 
 <body>
 	<h1>My First Web Page</h1>
-	<script>
+	<script type="text/javascript">
 		const myCity = {
 			city: 'New York',
 		};
@@ -148,6 +148,31 @@
 		const updateHommeOne = increaseHommeAge(hommeOne)
 		console.log(hommeOne.age)// 32
 		console.log(updateHommeOne.age) //33
+
+		// function printMyName() {
+		// 	console.log('Vladimir')
+		// }
+		// console.log('Start')
+
+		// setTimeout(printMyName, 3000)
+		
+		function myFn() {
+			let ut = 55;
+			function myFn2() {
+				console.log(ut);
+			}
+			myFn2();
+		}
+		myFn();
+				function myFn3() {
+						let ut1 = 55;
+						function myFn3() {
+							console.log(ut1);
+						}
+						myFn3();
+					}
+					myFn3();
+
 
 	</script>
 </body>
