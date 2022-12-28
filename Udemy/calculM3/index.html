@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Калькулятор объема коробок у Тани в гостях</title>
+</head>
+
+<body>
+  <h1>Калькулятор объема коробок </h1>
+  <form>
+    <label for="length">Длина:</label><br>
+    <input type="number" id="length" name="length"><br>
+    <label for="width">Ширина:</label><br>
+    <input type="number" id="width" name="width"><br>
+    <label for="height">Высота:</label><br>
+    <input type="number" id="height" name="height"><br><br>
+    <button type="button" id="calculate-button">Рассчитать объем</button>
+  </form>
+  <br>
+  <div id="result"></div>
+  <div id="total-volume"></div>
+ <script src="style.css"></script>
+  <script>
+    const calculateVolume = (length, width, height) => {
+      return length * width * height;
+    };
+
+    let totalVolume = 0;
+
+    const calculateButton = document.getElementById('calculate-button');
+    calculateButton.addEventListener('click', () => {
+      const length = document.getElementById('length').value;
+      const width = document.getElementById('width').value;
+      const height = document.getElementById('height').value;
+
+      const volume = calculateVolume(length, width, height);
+      totalVolume += volume;
+
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML += `<li>Объем коробки: ${volume} куб. м.</li>`;
+
+      const totalVolumeDiv = document.getElementById('total-volume');
+
+  totalVolumeDiv.innerHTML = `Общий объем: ${totalVolume} куб. м.`;
+});
+
+
+
+  </script>
+</body>
+
+</html>
