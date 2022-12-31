@@ -215,21 +215,47 @@
 			2: 3,
 			3: 4
 		}
-		
+
 		const myArray = [1, true, 'Vlad']
-// деструктуризация кода
-		const userProfile = { 
+		// деструктуризация кода
+		const userProfile = {
 			name: 'Vladimir',
 			commentQty: 20,
 		}
-		const userInfo = ({name, commentQty}) => {
+		const userInfo = ({ name, commentQty }) => {
 			if (!commentQty) {
 				return ` USER ${name} has no comments`
 			}
 			return `user ${name} has  ${commentQty} comments`
 		}
 		userInfo(userProfile)
-		
+
+		let val = 10
+		if (val > 5) {
+			val += 20
+		}
+		console.log(val)
+
+		const perso = {
+			age: 20
+		}
+		if (!perso.name) {
+			console.log('pas de nom')
+		}
+		const month =2
+		switch (month){
+			case 12:
+				console.log('december')
+		break
+		case 1:
+			console.log('janvier')
+		break
+		case 2:
+			console.log('février')
+		break
+		default:
+			console.log('existe pas')
+		}
 	</script>
 	<script src="script.js"></script>
 </body>
