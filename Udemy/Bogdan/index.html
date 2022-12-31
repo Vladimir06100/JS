@@ -217,6 +217,19 @@
 		}
 		
 		const myArray = [1, true, 'Vlad']
+
+		const userProfile = { 
+			name: 'Vladimir',
+			commentQty: 20,
+		}
+		const userInfo = ({name, commentQty}) => {
+			if (!commentQty) {
+				return ` USER ${name} has no comments`
+			}
+			return `user ${name} has  ${commentQty} comments`
+		}
+		userInfo(userProfile)
+		
 	</script>
 	<script src="script.js"></script>
 </body>
