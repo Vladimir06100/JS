@@ -1,7 +1,7 @@
-import num from "./moduleOne.mjs";
+import { sum, mult as multNubers } from "./moduleOne.mjs";
 
-const res1 = num(10, 2)
-console.log(res1)
 
-const res2 = num(5, 10)
-console.log(res2)
+
+console.log(sum(10, 2))
+
+console.log(multNubers(10, 2))
