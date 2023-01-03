@@ -297,11 +297,30 @@
 				upvote() {
 					this.votesQty += 1
 				}
+				static mergeComments(first, second) {
+					return `${first} ${second}`
+				}
 			}
+			Comment.mergeComments('First comment. ', 'Second comment')
+			
+			class NumberArray extends Array {
+				sum() {
+					// элемент и аккумулятор слева направо
+					return this.reduce((el, acc) => acc += el, 0)
+				}
+			}
+			const myArray3 = new NumberArray(2, 5, 7)
+			console.log(myArray3)
+			myArray3.sum()
+		
 			const firstComment = new Comment('First comment')
 			console.log(firstComment)
-		
 
+			firstComment.upvote()
+			console.log(firstComment.votesQty)
+			// dans la console 1
+	
+			
 	</script>
 	<script src="script.js"></script>
 </body>
