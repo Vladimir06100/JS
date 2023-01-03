@@ -44,6 +44,16 @@
   totalVolumeDiv.innerHTML = `Общий объем: ${totalVolume} куб. м.`;
 });
 
+class Comment {
+  constructor(text){
+    this.text = text
+    this.votesQty = 0
+  }
+  upvote(){
+    this.votesQty += 1
+  }
+}
+
 
 
   </script>
