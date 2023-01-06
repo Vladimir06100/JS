@@ -7,3 +7,15 @@
  *
  * 3. Выведите значение последней переменной в консоль
  */
+
+let a = 10
+let b = 5
+
+let c = a * b
+console.log(c)
+
+const myNumber1 = 8
+const myNumber2 = 15
+
+const mult = myNumber1 * myNumber2
+console.log(mult)
