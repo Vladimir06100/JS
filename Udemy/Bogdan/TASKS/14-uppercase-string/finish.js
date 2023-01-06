@@ -12,3 +12,27 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+const myFavoriteSeason = 'summer'
+// бинарный оператор   с двух сторон значение
+console.log(myFavoriteSeason instanceof String)
+
+console.log(typeof myFavoriteSeason)
+
+
+// пример с классом = экземпляром
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hi, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+const bob = new Person("Bob", 35);
+bob.greet(); // Hi, my name is Bob and I am 35 years old.
+/* Экземпляры (т.е. классы) используются в JavaScript для создания объектов с определенными свойствами и методами. Объекты, созданные с помощью экземпляра (класса), называются экземплярами этого класса.
+
+Например, можно создать экземпляр класса Person с именем bob: */
