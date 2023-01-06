@@ -8,3 +8,13 @@
  *
  * 4. Вызовите функцию
  */
+
+const myName = function () {
+  console.log(myName)
+}
+
+function printMyName() {
+  console.log('Vladimir')
+}
+printMyName()
+
