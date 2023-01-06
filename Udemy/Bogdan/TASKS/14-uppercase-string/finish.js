@@ -17,7 +17,10 @@ const myFavoriteSeason = 'summer'
 console.log(myFavoriteSeason instanceof String)
 
 console.log(typeof myFavoriteSeason)
+// так как это метод необходимо вызвать его
+const seasonToUpperCase = myFavoriteSeason.toUpperCase()
 
+console.log(seasonToUpperCase)
 
 // пример с классом = экземпляром
 class Person {
@@ -36,3 +39,10 @@ bob.greet(); // Hi, my name is Bob and I am 35 years old.
 /* Экземпляры (т.е. классы) используются в JavaScript для создания объектов с определенными свойствами и методами. Объекты, созданные с помощью экземпляра (класса), называются экземплярами этого класса.
 
 Например, можно создать экземпляр класса Person с именем bob: */
+
+const myString = new String('Vladimir')
+
+console.log(myString instanceof String)
+console.log(typeof myString)
+
+console.log(myString.toUpperCase())
