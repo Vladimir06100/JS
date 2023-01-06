@@ -13,3 +13,7 @@ const myArray = ['true', 2, false, null]
 
 console.log(myArray)
 
+myArray[1] = 123
+
+console.log(myArray)
+
