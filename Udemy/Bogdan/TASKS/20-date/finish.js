@@ -4,3 +4,9 @@
  *
  * 2. Выведите значение в консоль
  */
+
+const currentDate = new Date()
+// получаем значение времени в миллисекундах
+const currentTimeInMs = currentDate.getTime()
+
+console.log(currentTimeInMs)
