@@ -10,6 +10,14 @@ let myVariable1 = 10
 let myVariable2 = '5'
 
 // Напишите код здесь
+// вариант 1 конвертации строки в число
+console.log(parseInt('25'))
+console.log(typeof parseInt('25'))
+// вариант 2 префиксный +
+
+console.log(+'35')
+console.log(typeof +'35')
+
 
 myVariable1 = '20'
 myVariable2 = 100
