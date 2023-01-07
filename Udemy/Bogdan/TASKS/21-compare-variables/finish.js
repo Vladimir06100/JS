@@ -14,12 +14,15 @@ let myVariable2 = '5'
 console.log(parseInt('25'))
 console.log(typeof parseInt('25'))
 // вариант 2 префиксный +
-
+//= parseInt 
 console.log(+'35')
 console.log(typeof +'35')
+
+console.log(parseInt(myVariable1) <= parseInt(myVariable2))
 
 
 myVariable1 = '20'
 myVariable2 = 100
 
 // Напишите код здесь
+console.log(parseInt(myVariable1) <= parseInt(myVariable2))
