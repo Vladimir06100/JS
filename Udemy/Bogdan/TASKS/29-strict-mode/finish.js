@@ -4,12 +4,13 @@
  *
  * 2. Что будет, если отключить строгий режим?
  */
-
-'use strict'
+// без строго режима ошибки не будет и а станет видна глобально
+'use strict';
 
 function myFunction() {
-  a = 2
-  return a
+  // а так а доступно только внутри
+  const a = 2;
+  return a;
 }
 
-myFunction()
+myFunction();
