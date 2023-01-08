@@ -10,3 +10,7 @@
 
 const myNumber1 = 10 // 10 = 3 + 3 + 3 + 1
 const myNumber2 = 3
+// остаток от деления Reminder 1
+console.log(myNumber1 % myNumber2) 
+// возведение в степень ** 
+console.log (100 % 23 % 5 )
