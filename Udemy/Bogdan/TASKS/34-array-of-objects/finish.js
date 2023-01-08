@@ -25,7 +25,7 @@
  *
  * 4. Выведите результирующий массив в консоль
  */
-
+// запятые ставим для гит контроля
 const cars = [
   {
     carBrand: 'BMW',
@@ -52,6 +52,6 @@ const newCar = {
 
 cars.push(newCar);
 
-console.log(cars)
+console.log(cars[1].isAvailableForSale)
 
 

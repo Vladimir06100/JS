@@ -12,4 +12,15 @@ const myObject = {
   key3: 'abc',
   key4: null,
   key10: NaN,
-}
+};
+
+const objectKeys = Object.keys(myObject);
+// iteration
+objectKeys.forEach(key => {
+  if (key === 'key1' || key === 'key3') {
+    // определенное свойство
+    console.log(myObject[key])
+  }
+})
+
+console.log(result);
