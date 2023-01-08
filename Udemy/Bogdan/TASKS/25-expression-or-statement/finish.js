@@ -6,9 +6,10 @@
  *  - выражение-инструкция (expression statement)
  */
 
-15
+15 // <-- expression statement
 
-const myObject = {
+// statement
+const myObject = { // <-- expression
   x: 10,
   y: true,
 }
