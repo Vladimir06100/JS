@@ -7,8 +7,10 @@
  * 2. Выведите длину результирующего массива в консоль
  */
 
-const myArray = [true, null]
+const myArray = [true, null];
 
 // Напишите код здесь
 
-console.log(myArray) // [100, "Hello", true, null]
+myArray.unshift(100, "Hello");
+
+console.log(myArray); // [100, "Hello", true, null]

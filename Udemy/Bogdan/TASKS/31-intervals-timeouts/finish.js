@@ -19,5 +19,5 @@ const messageIntervalId = setInterval(() => {
   console.log('Сообщение номер ' + i);
   i = i + 1;
 }, 2000);
-
+// setTimeout (() => clearInterval(messageIntervalId), 11000);
 setTimeout(() => clearInterval(messageIntervalId), 11000);

@@ -7,4 +7,9 @@
  * 3. Какова длина конечного массива?
  */
 
-const myArray = [1, 2]
+const myArray = [1, 2];
+
+myArray[10] = 'abc';
+
+console.log(myArray);
+console.log(myArray.length);
