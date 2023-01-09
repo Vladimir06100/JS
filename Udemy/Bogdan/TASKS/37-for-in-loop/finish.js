@@ -9,10 +9,14 @@ const myObject = {
   name: 'Mike',
   age: 30,
   city: 'London',
-}
+};
 
-Object.prototype.country = 'England'
-
+Object.prototype.country = 'England';
+// перебрал все свойства в том числе наследуемые
 for (let key in myObject) {
-  console.log(myObject[key])
+  // hasProperty проверяет является ли ключ личным объектом(свойством)
+  if (myObject.hasOwnProperty(key)) {
+    console.log(myObject[key]);
+  }
 }
+console.log(myObject);
