@@ -9,7 +9,7 @@
 
 // // Function can be called before declaration
 // console.log(firstFunction(2, 3))
-
+// можно присвоить другое значение
 function firstFunction(a, b) {
   return a + b;
 }
