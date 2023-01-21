@@ -23,33 +23,30 @@ function play() {
 play();
 
 // Fonction "Manger" qui change les statistiques du tamagotchi à chaque action
-function eat(test1, test2, test3) {
+function eat() {
 	EN = EN + 2;
 	FAIM = FAIM - 1;
 	JOIE = JOIE - 1;
-	let eat = EN + FAIM + JOIE;
 }
 eat();
 
 // Fonction "GameOver", si l'une des variables est atteinte la partie se termine (->voir explication boucle)
 function gameover() {
 	let dead;
-	if (EN < 0 || JOIE < 0 || FAIM > 5) {
-		dead = true;
-	} else {
-		dead = false;
-	}
+	dead = EN < 0 || JOIE < 0 || FAIM > 5;
 	return dead;
 }
 
-// Boucle avec choix. Si on éteint le tamagotchi on sort de la boucle. Si GameOver, une alerte gameover s'affiche et la boucle devrait s'arreter également.
-while (choix != "3" && gameover() != true) {
+/*
+ Boucle avec choix. Si on éteint le tamagotchi on sort de la boucle. Si GameOver, une alerte gameover s'affiche et la boucle devrait s'arrêter également.
+*/
+while (choix !== "3" && gameover() !== true) {
 	gameover();
 	choix = prompt(
-		"Votre Tamagotchi fait du bruit. Voulez vous 1/ Jouer 2/ Nourrir 3/Eteindre ?",
+		"Votre Tamagotchi fait du bruit. Voulez vous 1/ Jouer 2/ Nourrir 3/Entendre ?",
 	);
 
-	if (choix == 1) {
+	if (choix === 1) {
 		let choix = play();
 		alert(
 			"Votre Tamagotchi est ravi d'avoir joué avec vous. Stats actuelles: Energie: " +
@@ -59,7 +56,7 @@ while (choix != "3" && gameover() != true) {
 				" JOIE: " +
 				JOIE,
 		);
-	} else if (choix == 2) {
+	} else if (choix === 2) {
 		gameover();
 		let choix = eat();
 		alert(
@@ -71,10 +68,10 @@ while (choix != "3" && gameover() != true) {
 				JOIE,
 		);
 	} else {
-		if (choix == "3") {
-			alert("A bientôt");
-		} else {
+		if (choix !== "3") {
 			alert("Veuillez selectionner une option.");
+		} else {
+			alert("A bientôt");
 		}
 	}
 	if (gameover()) {

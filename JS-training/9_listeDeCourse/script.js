@@ -46,9 +46,9 @@ function addCourses() {
 		// On vide la barre d'input une fois l'ingrédient ajouter à la liste de course
 		input.value = "";
 
-		// Appel des fonctions secondaires avec les paramètres dont elles ont besoin vu que les variables sont disponible uniquement dans addCourse
+		// Appel des fonctions secondaires avec les paramètres dont elles ont besoin vu que les variables sont disponibles uniquement dans addCourse
 		modif(btnModif, li, btnSuppr, btnRayer);
-		// PAssage de la variable LI dans les paramètre de la fonction hover
+		// Passage de la variable LI dans le paramètre de la fonction hover
 		hover(li);
 		supprimer(btnSuppr, li);
 		rayer(btnRayer, li);
@@ -61,16 +61,16 @@ function hover(li) {
 	});
 }
 
-// Function modifier la valeur à l'interieur de la liste
+// Function modifier la valeur à l'intérieur de la liste
 function modif(btnModif, li, btnSuppr, btnRayer) {
 	btnModif.addEventListener("click", function () {
 		// li qui était avant une liste devient un input
 		li.innerHTML = "<input type='text'>";
 
-		// On déclenche un addEvent listener sur LI devenu input qui fait que à la touche entrer:
+		// On déclenche un addEvent listener sur LI devenu input qui fait qu'à la touche entrer :
 		li.addEventListener("keydown", function (e) {
 			// Si j'ai appuyé sur la touche entrée
-			if (e.key == "Enter") {
+			if (e.key === "Enter") {
 				// ON PEUT DEMANDER CONFIRMATION POUR ÊTRE SUR QUE L'UTILISATEUR NE S'EST PAS TROMPE if(confirm(Êtes vous sure ?))
 
 				// On écrase l'input qui redevient liste et on met la valeur de l'ancien input dans la liste
@@ -98,10 +98,10 @@ function supprimer(btnSuppr, li) {
 function rayer(btnRayer, li) {
 	btnRayer.addEventListener("click", function () {
 		// Si le style de la li text Decoration est égal à line through on le remet normal
-		if (li.style.textDecoration == "line-through") {
+		if (li.style.textDecoration === "line-through") {
 			li.style.textDecoration = "";
 		}
-		// SINON on passe le style de la li à Line-through
+		// SINON, on passe le style de la li à Line-through
 		else {
 			li.style.textDecoration = "line-through";
 		}
