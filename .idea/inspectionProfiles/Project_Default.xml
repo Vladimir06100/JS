@@ -3,8 +3,9 @@
     <option name="myName" value="Project Default" />
     <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <Languages>
-        <language minSize="56" name="JavaScript" />
+        <language minSize="71" name="JavaScript" />
       </Languages>
     </inspection_tool>
+    <inspection_tool class="JSUnusedAssignment" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>

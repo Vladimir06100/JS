@@ -21,14 +21,14 @@ function tamagotchi() {
 function chooseAction(EN, FAIM, JOIE) {
 	let action;
 	// BOUCLE QUI GERE LA VIE DU TAMAGOCHI TANT QUE FAIM INFÉRIEUR A 5 && JOIE > 0 && ENERGIE > 0
-	while (FAIM <= 5 && JOIE >= 0 && EN >= 0 && action != "3") {
+	while (FAIM <= 5 && JOIE >= 0 && EN >= 0 && action !== "3") {
 		// CHOIX UTILISATEUR DE L'ACTION A EFFECTUE
 		action = prompt(
 			"Que souhaitez-vous faire? \n 1 - Jouer | \n  2 - nourrir | \n  3-Sortir du jeu"
 		);
 
 		// ACTION 1 CHOISI PAR L'UTILISATEUR
-		if (action == "1") {
+		if (action === "1") {
 			// ON ENLEVÉ 2 ENERGIE ON AJOUTE 1 DE FAIM ET 1 DE JOIE
 			EN -= 2;
 			FAIM++;
@@ -37,7 +37,7 @@ function chooseAction(EN, FAIM, JOIE) {
 			autopsie(FAIM, EN, JOIE);
 		}
 		// ACTION CHOISI PAR L'UTILISATEUR
-		else if (action == "2") {
+		else if (action === "2") {
 			// ON ENLEVÉ UN DE FAIM UN DE JOIE ET ON AJOUTE DEUX ENERGIES
 			FAIM--;
 			JOIE--;
@@ -46,7 +46,7 @@ function chooseAction(EN, FAIM, JOIE) {
 			autopsie(FAIM, EN, JOIE);
 		}
 		// ACTION UTILISATEUR CHOIX TROIS
-		else if (action == "3") {
+		else if (action === "3") {
 			// ON SORT DE LA BOUCLE ET ON ENVOI UN MESSAGE POUR DIRE AU REVOIR
 			alert("A bientôt !");
 		} else {
@@ -81,7 +81,9 @@ function autopsie(FAIM, EN, JOIE) {
 /** Rappel du statut  */
 
 function tamagochiStatut(FAIM, EN, JOIE) {
-	//   SI LE TAMAGOCHI EST A UN POINT DE FAIM DE MOURIR ON ENVOI UNE ALERTE POUR PRÉVENIR
+	/**
+	 *   SI LE TAMAGOCHI EST A UN POINT DE FAIM DE MOURIR ON ENVOI UNE ALERTE POUR PRÉVENIR
+	 */
 	if (FAIM >= 4 && FAIM <= 5) {
 		alert(
 			"Votre Tamagotchi a les caractéristiques suivantes:  \n  Energie = " +
@@ -93,7 +95,7 @@ function tamagochiStatut(FAIM, EN, JOIE) {
 				" \n  Votre tamagotchi a faim, pensez à le nourrir!"
 		);
 	}
-	// SINON SI LE TAMAGOCHI EST A UN POINT D'ENERGIE DE MOURIR ON ENVOI UNE ALERTE
+	// SINON SI LE TAMAGOCHI EST A UN POINT D'ÉNERGIE DE MOURIR ON ENVOI UNE ALERTE
 	else if (EN >= 0 && EN <= 2) {
 		alert(
 			"Votre Tamagotchi a les caractéristiques suivantes:  \n Energie = " +
@@ -137,11 +139,11 @@ function restart() {
 	let restart = prompt("Voulez-vous recommencer? 1/  Oui | 2/  Non");
 
 	// SI IL DIT OUI ON RELANCE LA GROSSE FONCTION PRINCIPAL TAMAGOCHI
-	if (restart == "1") {
+	if (restart === "1") {
 		tamagotchi();
 	}
 	// SINON SI IL DIT NON ON FERME LA FENÊTRE ET LE JEU EST TERMINE
-	else if (restart == "2") {
+	else if (restart === "2") {
 		alert("A bientôt");
 	}
 	// SINON MESSAGE D'ERREUR VEUILLEZ RÉESSAYER
