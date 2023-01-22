@@ -25,8 +25,12 @@ const secondFunction = function (a, b) {
   return a + b;
 };
 
+
+
 // // New value can't be assigned
 // secondFunction = true
 
 console.log(firstFunction(2, 5));
 console.log(secondFunction(5, 10));
+
+// crete new function with 40, 60
