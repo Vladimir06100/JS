@@ -6,12 +6,22 @@
  */
 
 function square(a) {
-  console.log(a * a)
+  // // OPTION 1
+  // if (a === undefined) {
+  //   throw new Error('Функция "square" не может быть вызвана без аргумента')
+  // }
+
+  // OPTION 2
+  if (arguments.length === 0) {
+    throw new Error('Функция "square" не может быть вызвана без аргумента');
+  }
+
+  console.log(a * a);
 }
 
-square(10)
+square(10);
 // 100
 
-square()
+square();
 // ДО: NaN
 // ПОСЛЕ: Uncaught Error: Функция "square" не может быть вызвана без аргумента

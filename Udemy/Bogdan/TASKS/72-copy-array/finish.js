@@ -4,13 +4,20 @@
  * При изменении копии массива оригинальный массив не должен изменяться
  */
 
-const a = [1, 2, 3]
+const a = [1, 2, 3];
 
-// Напишите код здесь
+// // OPTION 1
+// const b = [...a]
 
-b.push('newElement')
+// // OPTION 2
+// const b = Array.from(a)
 
-console.log(a)
+// OPTION 3
+const b = JSON.parse(JSON.stringify(a));
+
+b.push('newElement');
+
+console.log(a);
 // [1, 2, 3]
 
 console.log(b)

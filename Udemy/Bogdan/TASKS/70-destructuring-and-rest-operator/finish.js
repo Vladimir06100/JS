@@ -6,14 +6,14 @@
  * Значения переменных должны быть такими как в выводах в консоли
  */
 
-const arr = [1, 2, 3, 4, 5, 6, 7]
+const arr = [1, 2, 3, 4, 5, 6, 7];
 
-// Напишите код здесь
+const [a, b, ...c] = arr;
 
-console.log(a)
+console.log(a);
 // 1
 
-console.log(b)
+console.log(b);
 // 2
 
 console.log(c)
