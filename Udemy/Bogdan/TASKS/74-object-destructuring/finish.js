@@ -17,7 +17,7 @@ const person1 = {
     age: 23,
   },
   postsQuantity: 100,
-}
+};
 
 const person2 = {
   name: 'Alice',
@@ -25,11 +25,20 @@ const person2 = {
     country: 'Italy',
     age: 25,
   },
-}
+};
 
-// Напишите функцию "shortPerson" здесь
+const shortPerson = ({
+  name: n,
+  info: { country: c, age: a },
+  postsQuantity: p = 0,
+}) => ({
+  n,
+  c,
+  a,
+  p,
+});
 
-console.log(shortPerson(person1))
+console.log(shortPerson(person1));
 // { n: "Mike", c: "Spain", a: 23, p: 100 }
 
 console.log(shortPerson(person2))
