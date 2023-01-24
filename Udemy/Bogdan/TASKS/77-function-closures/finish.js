@@ -24,10 +24,10 @@ const createGreeting = () => {
   function changeGreeting(newGreeting) {
     greetingString = newGreeting;
   }
-
+// методы
   return {
-    greet,
-    changeGreeting,
+    greet: greet,
+    changeGreeting: changeGreeting,
   };
 };
 
