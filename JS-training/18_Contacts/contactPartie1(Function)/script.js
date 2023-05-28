@@ -9,12 +9,12 @@ let affichage = document.querySelector(".affichage");
 let affichageFiltre = document.querySelector(".affichageFiltre");
 let inputFilter = document.querySelector(".filter");
 
-// Création d'un tableau qui vas stocker tout les contacts
+// Création d'un tableau qui va stocker tous les contacts
 let tableau = [];
 let tableau2 = [];
 
 function ajoutContact() {
-	// On met un event listener sur notre bouton ajouter qui va:
+	// On met un event listener sur notre bouton ajouter qui va :
 	addInput.addEventListener("click", function (e) {
 		// Empêcher la page de se recharger
 		e.preventDefault();
@@ -45,13 +45,13 @@ function ajoutContact() {
 			// RECUPERATION DE TOUT LES BUTTONS CRÉER AU DESSUS
 
 			// APPARITION DANS LE HTML UNE FOIS DE TOUT LES PARAGRAPHES QUI CONTIENNE LA PRESENTATION
-			// ÉCRASER LA LISTE PRÉCÉDENTE EN HTML POUR LA REMPLACER PAR LA NOUVELLE AVEC L'ELEMENT EN PLUS
+			// ÉCRASER LA LISTE PRÉCÉDENTE EN HTML POUR LA REMPLACER PAR LA NOUVELLE AVEC ELEMENT EN PLUS
 		}
 	});
 }
 
 function affichageTableau() {
-	// On créer la variable paragraphe à vide
+	// On crée la variable paragraphe à vide
 	let paragraphe;
 	// On va créer la méthode forEach qui pour chaque element va :
 	tableau.forEach(function (element, index) {
@@ -68,12 +68,12 @@ function affichageTableau() {
 }
 
 function supprimer(buttons) {
-	// DÉCLENCHER UN FOR EACH QUI FAIT QUE POUR CHAQUE BUTTON ON VA FAIRE UNE ACTIOn
+	// DÉCLENCHER UN FOR EACH QUI FAIT QUE POUR CHAQUE BUTTON ON VA FAIRE UNE ACTOn
 
 	buttons.forEach(function (button, index) {
 		// POur chaque button on va :
 		button.addEventListener("click", function () {
-			// supprimer dans le tableau des contact l'index une fois
+			// supprimer dans le tableau du contact l'index une fois
 			console.log("tableauAvant", tableau);
 			tableau.splice(index, 1);
 
@@ -103,4 +103,3 @@ showDistance(85, 1.5);
 showDistance(12, 9);
 showDistance(42, 21);
 
-lett

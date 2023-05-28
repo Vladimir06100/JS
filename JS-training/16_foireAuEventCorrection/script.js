@@ -42,7 +42,7 @@ function blocOut(numerodubloc) {
 	});
 }
 
-// Appel des fonction bloc avec les
+// Appel de la fonction bloc avec les
 bloc(1);
 bloc(2);
 bloc(3);
@@ -56,7 +56,7 @@ function input() {
 	let input = document.querySelector("#input-text");
 	input.addEventListener("keydown", function (e) {
 		// SI LA TOUCHE APPUYER EST ÉGAL A ENTRER
-		if (e.key == "Enter") {
+		if (e.key === "Enter") {
 			alert("Formulaire envoyé");
 			input.value = "";
 		}

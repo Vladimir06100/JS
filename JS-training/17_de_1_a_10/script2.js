@@ -2,7 +2,7 @@
 let play = "oui";
 
 /* Boucle principale */
-while (play == "oui") {
+while (play === "oui") {
 	/* Initialisation des constantes et variables */
 	const nombreADeviner = Math.trunc(Math.random() * 100); // Nombre à deviner aléatoire entre 0 et 100
 	let nombreChoisi; // Nombre choisi
