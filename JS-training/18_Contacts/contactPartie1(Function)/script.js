@@ -6,7 +6,7 @@ let mailInput = document.querySelector(".mailInput");
 let phoneInput = document.querySelector(".phoneInput");
 let addInput = document.querySelector(".addInput");
 let affichage = document.querySelector(".affichage");
-let affichageFiltre = document.querySelector(".affichageFiltre");
+//let affichageFiltre = document.querySelector(".affichageFiltre");
 let inputFilter = document.querySelector(".filter");
 
 // Création d'un tableau qui va stocker tous les contacts
